@@ -1,0 +1,107 @@
+/* style.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background: #2d2c2c;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    text-align: center;
+    width: 350px;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    color: #d32f2f;
+    margin: 0;
+    font-size: 2rem;
+    letter-spacing: 2px;
+}
+
+.header img {
+    margin-top: 10px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 2px solid #d32f2f;
+}
+
+.timer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.timer label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.timer input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.btn {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.btn button {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.btn button:nth-child(1) {
+    background: #f44336;
+    color: #fff;
+}
+
+.btn button:nth-child(1):hover {
+    background: #d32f2f;
+}
+
+.btn button:nth-child(2) {
+    background: #ff9800;
+    color: #fff;
+}
+
+.btn button:nth-child(2):hover {
+    background: #e68900;
+}
+
+.btn button:nth-child(3) {
+    background: #4caf50;
+    color: #fff;
+}
+
+.btn button:nth-child(3):hover {
+    background: #3d8b40;
+}
