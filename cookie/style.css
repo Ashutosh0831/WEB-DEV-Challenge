@@ -1,0 +1,57 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body, html{
+    background-color: rgb(36, 35, 35);
+    color: whitesmoke;
+}
+
+.cookie-container{
+    height: 200px;
+    width: 200px;
+    background-color: whitesmoke;
+    border-radius: 20px;
+    color: black;
+    float: right;
+    margin-top: 350px;
+    margin-right: 20px;
+    display: block;
+    transform: all 0.3s ease-in;
+}
+
+
+.toogle-btn, .toogl-btn{
+    margin-left: 20px;
+    margin-top: 10px;
+    background-color: rgb(20, 20, 20);
+    color: white;
+    font-size: large;
+    border-radius: 20px;
+    padding-inline: 0.5rem;
+}
+
+button:active{
+    scale: 0.9;
+}
+
+img{
+    border-radius: 50%;
+    background: none;
+}
+
+.top{
+    display: flex;
+    gap: 40px;
+    margin-top: 5px;
+}
+
+.top > button{
+    background-color: whitesmoke;
+    color: black;
+    height: 20px;
+    border: none;
+    font-size: large;
+}
