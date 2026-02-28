@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS FOrm Validation</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="form-container">
+      <h3>Fill the given form.</h3>
+      <form>
+        <label for="name">Name ::</label>
+        <input type="text" id="name" placeholder="Full name" /><br /><br />
+        <label for="email">Email ::</label>
+        <input type="email" id="email" /><br /><br />
+        <label for="number">Phone number ::</label>
+        <input type="number" id="number" /><br /><br />
+        <label for="password">Password ::</label>
+        <input type="password" id="password" /><br /><br />
+        <label for="desc">Desciption ::</label>
+        <textarea
+          id="desc"
+          placeholder="Only 100 characters allowed"
+          cols="30"
+          rows="5"
+        ></textarea><br /><br />
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+
+    <script>
+      const form = document.querySelector("form");
+      const fullName = document.getElementById("name");
+      const email = document.getElementById("email");
+      const number = document.getElementById("number");
+      const password = document.getElementById("password");
+      const description = document.getElementById("desc");
+
+      description.addEventListener("input", () => {
+        const descLength = description.value.trim().length;
+
+        if (descLength > 100) {
+          description.style.color = "red";
+        } else {
+          description.style.color = "black";
+        }
+      });
+
+      form.addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        let isValid = true;
+
+        const namePattern = /^[A-Za-z\s]+$/;
+
+        if (fullName.value.trim() === "") {
+          alert("Name is required");
+          isValid = false;
+        } else if (!namePattern.test(fullName.value)) {
+          alert("Name must contain only letters");
+          isValid = false;
+        }
+
+        if (password.value.length > 15 || password.value.length < 8) {
+          alert("Password must be between 8-15 character");
+          isValid = false;
+        }
+
+        if (isValid) {
+          alert("Form submitted successfully!");
+          form.submit();
+        }
+      });
+    </script>
+  </body>
+</html>

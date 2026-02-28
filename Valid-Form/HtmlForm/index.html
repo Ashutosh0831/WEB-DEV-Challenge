@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Validation Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form-container">
+        <h3>Enter your details here.</h3>
+
+        <form>
+            <label for="name">Full Name::</label>
+            <input type="text" id="name" placeholder="Full Name" pattern="[a-z,A-Z]" title="Only English letters are allowed" required><br><br>
+            <label for="email">Email::</label>
+            <input type="email" id="email" placeholder="abcd@gmail.com" title="Email format should be abcd@gmail.com" required><br><br>
+            <label for="password">Password::</label>
+            <input type="password" id="password" minlength="8" maxlength="20"><br><br>
+            <label for="number">Phone Number::</label>
+            <input type="number" id="number" minlength="10" maxlength="10"><br><br>
+            <label for="desc">Description::</label>
+            <textarea  id="desc" cols="30" rows="5" maxlength="30"></textarea><br><br>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
