@@ -1,0 +1,22 @@
+*{
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+body, html, #root{
+  height: 100%;
+  width: 100%;
+}
+
+html{
+  background-color: rgb(255, 255, 255);
+}
+
+.Box{
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  padding: 2rem;
+  flex-wrap: wrap;
+}

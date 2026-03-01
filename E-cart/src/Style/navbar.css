@@ -1,0 +1,50 @@
+.nav-container{
+    display: flex;
+    gap: 800px;
+    margin-top: 25px;
+    background-color: rgb(34, 169, 24);
+    opacity: 0.8;
+    border-radius: 20px;
+}
+
+.left-nav{
+    display: flex;
+    gap: 10px;
+    padding-left: 50px;
+}
+
+h1{
+    color: rgb(255, 0, 0);
+    font-weight: 800px;
+    padding-top: 25px;
+    font-size: 50px;
+}
+
+img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+
+.right-nav{
+    color: rgb(217, 217, 239);
+    padding-top: 40px;
+}
+
+a{
+    color: black;
+    gap: 10px;
+    text-decoration: none;
+    margin-right: 20px;
+    font-size: larger;
+    font-weight: 700;
+}
+
+sup{
+    color: red;
+    font-size: 25px;
+}
+
+a:hover{
+    color: brown;
+}
