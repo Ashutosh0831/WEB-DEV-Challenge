@@ -4,6 +4,9 @@ const ContactBox = ({ contact }) => {
   if (!contact) return null;
   const { user, email, image, number, address } = contact;
 
+  console.log(image);
+  
+
   return (
     <>
       <div className='h-50 w-50 flex justify-center rounded-2xl object-fill box-container'>

@@ -1,0 +1,51 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+body, html{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(44, 43, 43);
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    position: relative;
+    display: flex;
+    background-color: rgb(169, 194, 194);
+    border-radius: 10px;
+}
+
+a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    margin-left: 20px;
+    padding: 1rem;
+}
+
+.project-tooltip, .Contact-tooltip{
+    display: none;
+    position: absolute;
+    background-color: rgb(125, 247, 212);
+    color: chocolate;
+    border-radius: 5px;
+    text-align: center;
+    transform: translate(50px, 20px);
+    padding: 0.3rem;
+    
+}
+
+
+.project:hover + .project-tooltip{
+    display: block;
+}
+
+.contact:hover + .Contact-tooltip{
+    display: block;
+}
