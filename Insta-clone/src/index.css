@@ -1,0 +1,29 @@
+*{
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+body, html, #root{
+  height: 100%;
+  width: 100%;
+  background-color: rgb(30, 29, 29);
+  color: whitesmoke;
+  display: flex;
+  justify-content: center;
+}
+
+main{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: rgb(32, 33, 33);
+  width: 50%;
+}
+
+.post-container{
+  display: flex;
+  flex-direction: column;
+  margin-left: 180px;
+  gap: 10px;
+}

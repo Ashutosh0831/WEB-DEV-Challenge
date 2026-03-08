@@ -1,0 +1,83 @@
+.story-container{
+    padding: 1rem;
+}
+
+.story-container > img{
+    background: radial-gradient(circle at 80%,#f9ce34,#ee2a7b,  purple ,#6228d7);
+    border-radius: 50%;
+    height: 80px;
+    padding: 0.3rem;
+    border: 2px solid black;
+}
+
+.head{
+    display: flex;
+    gap: 10px;
+}
+
+.head > img{
+    border-radius: 50%;
+    height: 50px;
+}
+
+.head > h3{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top: 10px;
+}
+
+.more{
+    margin-left: 210px;
+    font-size: 30px;
+}
+
+.post{
+    border-radius: 20px;
+    background-color: white;
+    height: 400px;
+    width: 400px;  
+}
+
+.post > img{
+    height: 100%;
+    border-radius: 20px;
+}
+
+.foot{
+    display: flex;
+    gap: 200px;
+    padding: 0.5rem;
+}
+
+.interact{
+    display: flex;
+    font-size: 20px;
+}
+
+#like{
+    font-size: 20px;
+}
+
+#comment{
+    font-size: 24px;
+}
+
+#share{
+    font-size: 30px;
+    margin-left: 13px;
+}
+
+#save{
+    margin-left: 50px;
+    font-size: 20px;
+}
+
+.all-story{
+    display: flex;
+    padding: 1rem;
+}
+
+h1{
+    text-align: center;
+    padding: 0.5rem;
+}
+
