@@ -1,0 +1,51 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+body, html{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main{
+    display: flex;
+    flex-direction: column;
+}
+.form{
+    margin-left: 50px;
+    padding: 1rem;
+    border: 2px solid black;
+}
+
+.login > img{
+    height: 20px;
+}
+
+
+.password > img{
+    height: 20px;
+}
+
+#submit{
+    margin-top: 20px;
+    margin-left: 100px;
+}
+
+.password > button{
+    margin-top: 20px;
+}
+
+button , img{
+    height: 20px;
+}
+
+
+.simple-keyboard{
+    display: none;
+    margin-top: 30px;
+}
+
