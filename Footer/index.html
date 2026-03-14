@@ -7,10 +7,20 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="content">
+    <main>
+      <div class="content">
         <h1>Hello Welcome To The Webpage.</h1>
         <p>this is the webpage area</p>
-    </div>
+      </div>
+      <div class="dark-mode">
+        <button type="button" id="mode-btn">
+          <img
+            src="https://cdn-icons-png.flaticon.com/128/606/606795.png"
+            alt="Light"
+          />
+        </button>
+      </div>
+    </main>
     <footer>
       <div class="footer-container">
         <div class="head-container">
@@ -41,7 +51,7 @@
           </div>
           <div class="right-container">
             <div class="about">
-                <h3>About</h3>
+              <h3>About</h3>
               <nav>
                 <a href="#">About Us</a>
                 <a href="#">Support</a>
@@ -51,7 +61,7 @@
               </nav>
             </div>
             <div class="company">
-                <h3>Company</h3>
+              <h3>Company</h3>
               <nav>
                 <a href="#">Hire from us</a>
                 <a href="#">Discord</a>
@@ -61,7 +71,7 @@
               </nav>
             </div>
             <div class="contact">
-                <h3>Contact</h3>
+              <h3>Contact</h3>
               <p>+91 5478456542</p>
               <p>hello@gmail.com</p>
               <p>23-B, Varanasi</p>
@@ -71,5 +81,22 @@
         </div>
       </div>
     </footer>
+    <script>
+      const mode_btn = document.querySelector("#mode-btn");
+
+      let darkMode = false;
+
+      mode_btn.addEventListener("click", () => {
+        if (!darkMode) {
+          document.body.style.backgroundColor = "black";
+          document.body.style.color = "whitesmoke";
+          darkMode = true;
+        } else {
+          document.body.style.backgroundColor = "white";
+          document.body.style.color = "black";
+          darkMode = false;
+        }
+      });
+    </script>
   </body>
 </html>
