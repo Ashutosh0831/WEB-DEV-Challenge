@@ -8,3 +8,9 @@ async function addPostContoller(req,res){
 
     
 }
+
+
+
+module.exports = {
+    addPostContoller
+}

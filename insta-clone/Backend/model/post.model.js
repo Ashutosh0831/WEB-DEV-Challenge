@@ -4,7 +4,7 @@ const mongoose = require("mongoose")
 
 const postSchema = new mongoose.Schema({
     username : {
-        user : mongoose.Schema.Types.ObjectId,
+        type : mongoose.Schema.Types.ObjectId,
         ref : 'user'
     },
     post_url :{
