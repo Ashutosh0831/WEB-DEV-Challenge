@@ -1,0 +1,18 @@
+.story-container{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+
+    img{
+        width: 70px;
+        border-radius: 50%;
+        padding: 0.3rem;
+        background: radial-gradient(circle at bottom right, purple, rgb(188, 47, 124), red, yellow);
+    }
+    
+    h5{
+        padding: 0.3rem;
+        padding-left: 1.1rem;
+        color: rgb(150, 145, 145);
+    }
+}

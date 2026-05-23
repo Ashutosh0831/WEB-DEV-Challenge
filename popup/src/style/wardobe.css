@@ -1,0 +1,39 @@
+.wardobeContainer{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wardobe{
+  padding: 2rem;
+  height: fit-content;
+  width: 300px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  background-color: rgb(73, 49, 20);
+}
+
+img{
+    width: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+button{
+    background-color: aquamarine;
+    padding: 0.5rem;
+    border-radius: 20px;
+}
+
+button:active{
+    scale: 0.8;
+}
+
+.popup-conatiner{
+    display: none;
+    padding: 2rem;
+    height: fit-content;
+    background-color: coral;
+    border-radius: 40px;
+
+}

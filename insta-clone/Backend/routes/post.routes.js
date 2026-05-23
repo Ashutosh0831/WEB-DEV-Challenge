@@ -1,11 +1,12 @@
 const express = require("express")
 const postContoller = require("../controller/post.controller")
+const identifyUser = require("../middleware/auth.middleware")
 
 
 
 const postRoutes = express.Router()
 
-postRoutes.post('/',postContoller.addPostContoller)
+postRoutes.post('/',identifyUser,postContoller.addPostContoller)
 
 
 
